@@ -1,0 +1,40 @@
+{
+  "name": "@lotargo/teleprompt",
+  "version": "0.2.0",
+  "description": "Shared Telegram bot runtime and MCP tools for coding agents",
+  "type": "module",
+  "bin": {
+    "teleprompt": "dist/cli.js"
+  },
+  "files": [
+    "dist/cli.js",
+    "dist/cli.js.map",
+    "skills",
+    ".codex-plugin",
+    ".claude-plugin",
+    ".mcp.json",
+    ".mcp.codex.json",
+    "README.md",
+    "docs"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "tsc && node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "test:live": "node scripts/live-acceptance.mjs",
+    "check": "npm run typecheck && npm test",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  }
+}
