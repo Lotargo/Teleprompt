@@ -1,0 +1,4 @@
+interface:
+  display_name: "Teleprompt"
+  short_description: "Publish and inspect Telegram chats through configured bots"
+  default_prompt: "Use Teleprompt to manage the requested Telegram bot and chat."

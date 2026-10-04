@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "teleprompt": {
+      "command": "node",
+      "args": ["${PLUGIN_ROOT}/dist/cli.js", "mcp"]
+    }
+  }
+}

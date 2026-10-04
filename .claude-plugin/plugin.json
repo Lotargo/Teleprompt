@@ -1,0 +1,6 @@
+{
+  "name": "teleprompt",
+  "version": "0.2.0",
+  "description": "Manage multiple Telegram bots and chats through one local runtime",
+  "author": { "name": "Lotargo" }
+}
